@@ -1,0 +1,22 @@
+{
+  "name": "electron-products-crud",
+  "productName": "Products Electron App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "APP_DEV=true electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . trabajo07-electronjs --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Trabajo07-ElectronJS\"",
+    "package-linux": "electron-packager . trabajo07-electronjs --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^3.1.13",
+    "electron-packager": "^15.2.0",
+    "electron-reload": "^1.5.0"
+  }
+}
